@@ -1,14 +1,14 @@
 const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
-  entry: './src/app.ts',
+  entry: './src/app.ts',  //最初に読み込ませるファイルもtsファイルに変更
   target: 'node',
   cache: true,
   output: {
     filename: 'app.js',
     path: `${process.cwd()}/dist`,
   },
-  // devtool: 'inline-source-map',
+  devtool: 'inline-source-map',
   externals: [nodeExternals()],
   module: {
     rules: [{
