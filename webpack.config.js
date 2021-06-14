@@ -1,7 +1,7 @@
 const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
-  entry: './src/app.ts',  //最初に読み込ませるファイルもtsファイルに変更
+  entry: './src/app.ts',
   target: 'node',
   cache: true,
   output: {
